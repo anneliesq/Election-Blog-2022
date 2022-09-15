@@ -1,11 +1,16 @@
 ---
-title: Introduction
-author: Annelies Quinton
+title: "Introduction"
+author: "Annelies Quinton"
 date: '2022-09-14'
-slug: []
+output: pdf_document
 categories: []
 tags: []
-summary: "Welcome to my weekly election blog for the upcoming 2022 midterms in November. The goal of this blog is to create a prediction for both the seat share and the popular vote for each party within the House of Representatives. I will use this blog to explain changes and additions to my prediction model. I will also provide graphics that support my claims and data reasoning."
+summary: Welcome to my weekly election blog for the upcoming 2022 midterms in November.
+  The goal of this blog is to create a prediction for both the seat share and the
+  popular vote for each party within the House of Representatives. I will use this
+  blog to explain changes and additions to my prediction model. I will also provide
+  graphics that support my claims and data reasoning.
+slug: []
 ---
 
 
