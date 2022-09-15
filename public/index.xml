@@ -13,16 +13,8 @@
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/post/2022-09-15-week-1-past-elections-and-gerrymandering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test Post 1</title>
-      <link>http://example.org/post/2022-09-14-test-post-1/</link>
-      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/post/2022-09-14-test-post-1/</guid>
-      <description>Hello, world!</description>
+      <description>Welcome to my weekly election blog for the upcoming 2022 midterms in November. The goal of this blog is to create a prediction for both the seat share and the popular vote for each party within the House of Representatives. I will use this blog to explain changes and additions to my prediction model. I will also provide graphics that support my claims and data reasoning.
+This first post serves as an introduction to this upcoming election by analyzing the outcomes of past recent midterms.</description>
     </item>
     
   </channel>
