@@ -6,7 +6,16 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week 1: Past Elections and Gerrymandering</title>
+      <link>http://example.org/post/2022-09-15-week-1-past-elections-and-gerrymandering/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/2022-09-15-week-1-past-elections-and-gerrymandering/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Test Post 1</title>
       <link>http://example.org/post/2022-09-14-test-post-1/</link>

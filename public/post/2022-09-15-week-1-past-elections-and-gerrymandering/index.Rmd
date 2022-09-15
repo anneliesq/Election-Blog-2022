@@ -1,0 +1,8 @@
+---
+title: 'Week 1: Past Elections and Gerrymandering'
+author: Annelies Quinton
+date: '2022-09-15'
+slug: []
+categories: []
+tags: []
+---
