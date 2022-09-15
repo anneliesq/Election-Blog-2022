@@ -58,7 +58,7 @@ cd114 <- cd114 %>%
 
 # National Vote Share
 
-This section will compare the 2014 and 2020 GOP vote share margin. Vote share is calculated by taking total republican votes in that state divided by the sum of the state's total democratic and republican votes. As the shades of red increases in britghtness, this represents the GOP having a larger percentage of the vote share in that state
+This section will compare the 2014 and 2020 GOP vote share margin. Vote share is calculated by taking total republican votes in a state divided by the sum of the state's total democratic and republican votes. As the shades of red increases in brightness, this represents the GOP having a larger percentage of the vote share in that state.
 
 ```{r, include = FALSE}
 house <- read_csv(file = "house party vote share by district 1948 to 2020.csv")
@@ -155,7 +155,9 @@ For 2020, the two lowest states of the GOP vote share were in Massachusetts and 
 
 Overall, between 2014 and 2020 we see a general decline in the GOP's vote share as the color of the map decreases in brightness. When comparing the mean GOP vote share across these years, we see that in 2014, the mean GOP vote share was 53.19%. Looking at 2020, this value dropped to 48.74%. These values corroborate the general visual trend of the map that shows the GOP vote share decreasing between the 2014 and 2020 elections.
 
-# Gerrymandering
+# Seat share and Gerrymandering
+
+This sections looks at the seat share of the House after the 2020 election. Seat share is calculated by the number of republican seats won in a state divided by the total number of seats available in that state.
 
 ```{r, include = FALSE}
 # Gerrymandering
@@ -166,7 +168,6 @@ Seats_2020 <- Seats_2020 %>%
   rename(state = Area)
 ```
 
-
 ```{r}
 gerry2020_map <- plot_usmap(data = Seats_2020, regions = "states", values = "R_SeatShare", labels = TRUE) +
   scale_fill_gradient(low = "white", high = "red", name = "GOP House Seat Share in 2020") + 
@@ -174,10 +175,6 @@ gerry2020_map <- plot_usmap(data = Seats_2020, regions = "states", values = "R_S
 
 
 gerry2020_map
-```
-
-
-```{r}
 ```
 
 Vote share is an important measurement to consider when predicting election results, however seat share arguably provides a more accurate depiction of the implications of the vote outcomes with regard to the House. Due to plurality voting, popular vote does not equate to the proportion of seats allotted to each party in the House. The map below shows the seat shares after the 2020 election. One state of note is Arkansas, whose data was not included. However, it can be noted that Arkansas had [all four seats](https://ballotpedia.org/United_States_House_of_Representatives_elections_in_Arkansas,_2020) go to the republicans, making their shade a bright red. Compared to the map of the vote shares, this map is evidently more red, indicating a greater percentage of seats won by republicans than the actual vote share won by republicans. Specifically looking in the mountain west region and the south, there is significant disparity among the color shade for these states between the vote share and seat share graphs. The mean seat share for republicans from the 2020 election was 56.19%. This is 7.44% higher than the mean vote share republicans earned. This difference shows how gerrymandering plays a significant role in elections and has shown to support the republican's path to gaining seats in the House. This is likely to continue for the 2022 election, as redistricting from the 2020 census has [enabled both parties, but largely republicans](https://www.brennancenter.org/our-work/analysis-opinion/after-redistricting-heres-how-each-party-could-win-house), to gerrymander districts.
