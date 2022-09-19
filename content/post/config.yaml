@@ -1,7 +1,7 @@
 baseurl: /
 languageCode: en-us
-title: Annleies Quinton Midterm Election Blog
-theme: hugo-lithium
+title: "Annelies Quinton Midterm Election Blog"
+theme: hugo-tale
 googleAnalytics: ''
 disqusShortname: ''
 ignoreFiles:
@@ -17,7 +17,7 @@ menu:
     - name: About
       url: /about/
     - name: GitHub
-      url: https://github.com/rstudio/blogdown
+      url: https://github.com/anneliesq/Election-Blog-2022
     - name: Twitter
       url: https://twitter.com/rstudio
 params:
