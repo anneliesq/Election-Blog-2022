@@ -68,7 +68,7 @@ house <- read_csv(file = "house party vote share by district 1948 to 2020.csv")
 h.2014 <- house %>% 
   filter(raceYear == 2014) %>% 
   select(raceYear, State, district_num, RepVotesMajorPercent, DemVotesMajorPercent) %>% 
-  group_by(State, district_num) %>% 
+  group_by(district_num, State) %>% 
   summarise(Rep_votes_pct = RepVotesMajorPercent) %>% 
   # rename district variable name to match shapefile
   rename(DISTRICT = district_num)
@@ -80,16 +80,16 @@ cd114$DISTRICT <- as.numeric(cd114$DISTRICT)
 
 # Join election outcomes with shapefiles
 cd114 <- cd114 %>% left_join(h.2014, by=c("DISTRICT", "State"))
-#cd114 <- ms_simplify(cd114, keep = 0.25, keep_shapes = T)
-# Plot districts
-#district_map <- ggplot() +
- # geom_sf(data=cd114,aes(fill=Rep_votes_pct) ,
-  #inherit.aes=FALSE,alpha=0.1) +
- # scale_fill_gradient(low = "white", high = "red", limits=c(0,100)) +
-  #coord_sf(xlim = c(-172.27, -66.57), ylim = c(18.55, 71.23), expand = FALSE) +
-  #theme_void()
+cd114 <- ms_simplify(cd114, keep = 0.01, keep_shapes = T)
+#Plot districts
+district_map <- ggplot() +
+ geom_sf(data=cd114,aes(fill=Rep_votes_pct),
+  inherit.aes=FALSE,alpha=0.1) +
+  scale_fill_gradient(low = "white", high = "red", limits=c(0,100))+
+  coord_sf(xlim = c(-172.27, -66.57), ylim = c(18.55, 71.23), expand = FALSE) +
+  theme_void()
 
-#district_map
+district_map
 ```
 
 ```{r, include=FALSE}
