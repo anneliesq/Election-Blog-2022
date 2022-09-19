@@ -82,14 +82,14 @@ cd114$DISTRICT <- as.numeric(cd114$DISTRICT)
 cd114 <- cd114 %>% left_join(h.2014, by=c("DISTRICT", "State"))
 cd114 <- ms_simplify(cd114, keep = 0.01, keep_shapes = T)
 #Plot districts
-district_map <- ggplot() +
- geom_sf(data=cd114,aes(fill=Rep_votes_pct),
-  inherit.aes=FALSE,alpha=0.1) +
-  scale_fill_gradient(low = "white", high = "red", limits=c(0,100))+
-  coord_sf(xlim = c(-172.27, -66.57), ylim = c(18.55, 71.23), expand = FALSE) +
-  theme_void()
+#district_map <- ggplot() +
+ #geom_sf(data=cd114,aes(fill=Rep_votes_pct),
+  #inherit.aes=FALSE,alpha=0.1) +
+  #scale_fill_gradient(low = "white", high = "red", limits=c(0,100))+
+  #coord_sf(xlim = c(-172.27, -66.57), ylim = c(18.55, 71.23), expand = FALSE) +
+  #theme_void()
 
-district_map
+#district_map
 ```
 
 ```{r, include=FALSE}
